@@ -6,7 +6,7 @@ project(mdspan_formatter
 
 add_library(mdspan_formatter INTERFACE)
 target_include_directories(${PROJECT_NAME} INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/include)
-target_compile_features(${PROJECT_NAME} INTERFACE cxx_std_23)
+# target_compile_features(${PROJECT_NAME} INTERFACE cxx_std_23)
 set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 
 if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
